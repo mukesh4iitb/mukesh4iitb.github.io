@@ -1,0 +1,13 @@
+.container{
+  margin: 100px auto;
+  width: 70%;
+}
+p{
+font-size: 20px;
+white-space: 20px;
+
+}
+
+li {
+  font-size: 18px;
+}
