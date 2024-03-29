@@ -1,0 +1,58 @@
+.container{
+  margin: 20px auto;
+  width: 80%;
+}
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #D3F0FA; /* Light blue background */
+    color: #333;
+}
+
+
+
+/* color: #0000FF;*/
+h3 {
+    color: #de1ad7; /* Light green for subheadings */
+}
+
+p{
+font-size: 20px;
+white-space: 20px;
+
+}
+
+ul li {
+    margin-left: 10px; /* Base indentation for all list items */
+    font-size: 19px
+}
+
+a:link {
+    color: #2804fa;
+}
+
+
+
+a:visited {
+    color: #8671f6;
+}
+a:hover {
+    color: orange;
+}
+/*a:active {
+    color: red;
+}
+*/
+footer {
+    text-align: center;
+    padding: 1px;
+    background: #F1E2F0; /* Pink background for the footer */
+    color: #333; /* Dark text for contrast */
+    position: relative;
+    width: 100%;
+    /*margin-top: 2px;*/
+}
+
