@@ -1,8 +1,7 @@
-## Welcome to 
-## Mukesh GitHub Pages
+## Welcome to Mukesh GitHub Pages
 
 
-### academic CV can be found here:
+### Academic CV can be found here:
 https://github.com/topics/academic-cv-latex-template
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
