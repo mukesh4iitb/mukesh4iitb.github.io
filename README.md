@@ -1,17 +1,82 @@
-## Welcome to Mukesh GitHub Pages
+# mukeshphy-site
 
+A clean, static replacement for https://sites.google.com/view/mukeshphy/home — plain HTML/CSS, no build step, ready for GitHub Pages.
 
-### Academic CV can be found here:
-https://github.com/topics/academic-cv-latex-template
+## Structure
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+```
+mukeshphy-site/
+├── index.html          Home
+├── about.html            About (education, advisors, leadership, links)
+├── research.html        Research
+├── publications.html    Publications
+├── code.html             Code
+├── workshops.html        Workshops & Conferences
+├── links.html            Links
+├── assets/
+│   ├── style.css         shared stylesheet
+│   ├── about/             figures used on the About page
+│   ├── research/          figures used on the Research page
+│   └── profile.jpg        (add your own photo here — see below)
+└── README.md
+```
 
-### Jekyll Themes
+The "Code" nav link points straight to your existing GitHub Pages site
+(`https://mukesh4iitb.github.io/`) rather than a local page, matching how it
+worked on the Google Sites version.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mukesh4iitb/mukesh4iitb.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Add your photo (optional)
 
-### Support or Contact
+The homepage currently shows a placeholder "MS" monogram avatar. To use a
+real photo:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. Drop an image into `assets/profile.jpg` (a square photo, roughly 300×300px, works best).
+2. In `index.html`, replace the avatar block:
+   ```html
+   <div class="avatar">
+     MS
+   </div>
+   ```
+   with:
+   ```html
+   <div class="avatar">
+     <img src="assets/profile.jpg" alt="Mukesh Singh">
+   </div>
+   ```
 
+## Deploy on GitHub Pages
 
+1. Create a new GitHub repo (e.g. `mukeshphy-site`, or `mukesh4iitb.github.io`
+   if you want it at the root of your GitHub Pages domain — note you already
+   have a repo at that name for your Code page, so a distinct repo name is
+   simplest here).
+2. From inside this folder:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial site"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/mukeshphy-site.git
+   git push -u origin main
+   ```
+3. On GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
+   branch `main`, folder `/ (root)`. Save.
+4. Your site will be live at `https://<your-username>.github.io/mukeshphy-site/`
+   within a minute or two.
+5. Optional: add a custom domain in the same Pages settings if you have one.
+
+## Local preview
+
+No build tools needed — just open `index.html` in a browser, or serve it locally:
+
+```bash
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
+
+## Editing content
+
+Every page is a self-contained HTML file with the same header/nav/footer
+markup repeated at the top and bottom — edit the text in the `<main>` section
+of whichever page you want to change. All shared visual styling lives in
+`assets/style.css`.

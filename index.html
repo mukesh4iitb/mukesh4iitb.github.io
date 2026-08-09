@@ -1,168 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukesh's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mukesh Singh — Computational Condensed Matter Physics</title>
+<meta name="description" content="Mukesh Singh, postdoctoral fellow at Central Michigan University, researching metal-sulfur batteries and computational condensed matter physics.">
+<link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-    <div class="container">
 
-        <header>
-            <h1>Welcome to My Coding Portfolio</h1>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="site-name" href="index.html">Mukesh Singh</a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="code.html">Code</a>
+      <a href="workshops.html">Workshops &amp; Conferences</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </div>
+</header>
 
-            <p align="justify">
-                <!-- Hi, <br><br> -->
-                Hi, I am <b>Mukesh Singh</b>, a dedicated research scholar specializing in
-                Computational Condensed Matter Physics at the Indian Institute of Technology Bombay.
+<main>
 
-                Computational simulation software requires carefully formatted inputs and outputs.
-                To simplify and automate these processes, I have developed several
-                <b>pre-processing and post-processing tools</b>, along with workflow automation scripts.
-
-                These tools, along with my coding projects and hands-on practices, may be useful
-                for researchers and students working in similar domains.
-
-                <!-- <br><br> -->
-                For more details, please visit
-                <a href="https://sites.google.com/view/mukeshphy/home" target="_blank">
-                    My Personal Website
-                </a>.
-            </p>
-        </header>
-
-
-        <!-- ================= VASP SECTION ================= -->
-        <section id="vasp">
-            <h3>VASP: [Repository:
-                <a href="https://github.com/mukesh4iitb/VaspWorks" target="_blank">
-                    VaspWorks
-                </a>] </h3>
-
-            <p align="justify">
-                I have developed <b>VaspWorks</b>, a workflow framework based on Python and Bash.
-                It automates input generation for various VASP simulations, similar to VASPkit.
-            </p>
-
-            <ul>
-                <li>Structure relaxation</li>
-                <li>Density of States (DOS)</li>
-                <li>Band structure calculations</li>
-                <li>Selective dynamics</li>
-                <li>Nudged Elastic Band (NEB)</li>
-            </ul>
-
-
-        <h3>VASP: [Repository:
-                <a href="https://github.com/mukesh4iitb/pre_and_post_processing_dft/tree/main/vasp" target="_blank">
-                    pre_and_post_processing_dft/vasp
-                </a>] </h3>
-            
-            <p align="justify">
-                This repository includes several pre- and post-processing tools:
-            </p>
-
-            <ul>
-                <li>DOS and band structure plotting</li>
-                <li>Molecular dynamics (MD) analysis plots</li>
-                <li>Archiving VASP output files</li>
-            </ul>
-
-        </section>
-
-        <!-- ================= GAUSSIAN ================= -->
-        <section id="gaussian">
-            <h3>Gaussian: [Repository:
-                <a href="https://github.com/mukesh4iitb/pre_and_post_processing_dft/tree/main/gaussian" target="_blank">
-                    Gaussian Tools
-                </a>]
-            </h3>
-
-            <p align="justify">
-                I have developed tools for generating Gaussian input files and extracting
-                important quantities from output files for analysis.
-            </p>
-
-        </section>
-
-        <!-- ================= VESTAPY ================= -->
-        <section id="vestapy">
-            <h3>VestaPy: [Repository:
-                <a href="https://github.com/mukesh4iitb/vestapy" target="_blank">
-                    VestaPy
-                </a>]
-            
-            </h3>
-
-            <p align="justify">
-                <b>VestaPy</b> is a Python-based automation tool for VESTA that eliminates manual work.
-                It allows automation of:
-            </p>
-
-            <ul>
-                <li>Atom color customization</li>
-                <li>Bond color modification</li>
-                <li>Bond-length adjustments</li>
-                <li>Atom size control</li>
-                <li>General visualization automation</li>
-            </ul>
-
-            <p align="justify">
-                Most operations that are manually performed in VESTA are supported.
-                New features are continuously added.
-            </p>
-
-        </section>
-
-        <!-- ================= RXNPY ================= -->
-        <section id="rxnpy">
-            <h3>RxnPy: [Repository:
-                <a href="https://github.com/mukesh4iitb/RxnPy/tree/main" target="_blank">
-                    RxnPy
-                </a>]
-            </h3>
-
-            <p align="justify">
-                <b>RxnPy</b> is a toolkit for studying reaction energetics and adsorption on surfaces.
-            </p>
-
-            <ul>
-                <li>
-                    <b>Polysulfides Adsorbed structure Generator:</b> Generates structures of polysulfides adsorbed on
-                    surfaces. It can be adapted for other molecules on various surfaces.
-                </li>
-                <li>
-                    <b>Energy Analysis:</b> Calculates adsorption/absorption energies and Gibbs free energies of given
-                    reactions (Reaction.in and Reaction1.in files). It can be extended to any kind of reactions.
-                </li>
-            </ul>
-        </section>
-
-        <!-- ================= PHONON ================= -->
-        <section id="phonon">
-            <h3>Phonopy / Phono3py / ShengBTE / Boltztrap:</h3>
-        </section>
-
-        <!-- ================= BASH ================= -->
-
+  <section class="hero">
+    <div class="avatar">
+      <!-- Replace this block with <img src="assets/profile.jpg" alt="Mukesh Singh"> once you add your photo -->
+      MS
     </div>
-</body>
+    <div class="hero-text">
+      <h1>Mukesh Singh</h1>
+      <p class="hero-role">Postdoctoral Research Fellow, Department of Physics<br>Central Michigan University</p>
+    </div>
+  </section>
 
-    <p align="center">
-    <a href="https://github.com/mukesh4iitb/mukesh4iitb.github.io/blob/main/CV_short.pdf" target="_blank">CV (short)</a> |
-    <a href="https://github.com/mukesh4iitb/mukesh4iitb.github.io/blob/main/CV_long.pdf" target="_blank">CV (long)</a> |
-    <a href="https://www.linkedin.com/in/mukesh-singh-63236919b/" target="_blank">LinkedIn</a> |
-    <a href="https://scholar.google.co.in/citations?user=Lfi6CDsAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-    <a href="https://mukesh4iitb.github.io/" target="_blank">GitHub</a> |
-    <a href="https://www.researchgate.net/profile/Mukesh_Singh9" target="_blank">ResearchGate</a>
-</p>
+  <p class="tagline">Welcome to my world of Computational Condensed Matter Physics</p>
 
-    
-<footer>
-    <p>© 2026 Mukesh. All rights reserved.</p>
+  <section>
+    <p>
+      I am a postdoctoral fellow in the Physics Department at Central Michigan University.
+      My research centers on metal&ndash;sulfur battery modeling using computational methods,
+      in collaboration with experimentalists studying lithium&ndash;sulfur batteries.
+      During my doctoral work, I focused on novel material modeling and applications of
+      2D carbon nanomaterials for hydrogen storage and generation.
+    </p>
+    <p>
+      I am passionate about exploring the fundamental properties of materials &mdash;
+      electronic, optical, vibrational, mechanical, and topological &mdash; and their
+      applications in the hydrogen economy, catalysis, and battery research using
+      computational and machine learning approaches.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact-list plain">
+      <li>Email: <a href="mailto:gkpmukeshsingh@gmail.com">gkpmukeshsingh@gmail.com</a></li>
+      <li>Email: <a href="mailto:singh21m@cmich.edu">singh21m@cmich.edu</a></li>
+    </ul>
+
+    <div class="link-row">
+      <a class="pill" href="https://github.com/mukesh4iitb/mukesh4iitb.github.io/blob/main/CV_short.pdf" target="_blank" rel="noopener">CV (short)</a>
+      <a class="pill" href="https://github.com/mukesh4iitb/mukesh4iitb.github.io/blob/main/CV_long.pdf" target="_blank" rel="noopener">CV (long)</a>
+      <a class="pill" href="http://linkedin.com/in/mukesh-singh-63236919b" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill" href="https://scholar.google.co.in/citations?user=Lfi6CDsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="pill" href="https://github.com/mukesh4iitb" target="_blank" rel="noopener">GitHub</a>
+      <a class="pill" href="https://www.researchgate.net/profile/Mukesh_Singh9" target="_blank" rel="noopener">ResearchGate</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="link-row">
+      <a class="pill" href="https://github.com/mukesh4iitb/mukesh4iitb.github.io/blob/main/CV_short.pdf" target="_blank" rel="noopener">CV (short)</a>
+      <a class="pill" href="https://github.com/mukesh4iitb/mukesh4iitb.github.io/blob/main/CV_long.pdf" target="_blank" rel="noopener">CV (long)</a>
+      <a class="pill" href="http://linkedin.com/in/mukesh-singh-63236919b" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill" href="https://scholar.google.co.in/citations?user=Lfi6CDsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="pill" href="https://github.com/mukesh4iitb" target="_blank" rel="noopener">GitHub</a>
+      <a class="pill" href="https://www.researchgate.net/profile/Mukesh_Singh9" target="_blank" rel="noopener">ResearchGate</a>
+    </div>
+    <span class="footer-copyright">&copy; 2026 Mukesh. All rights reserved.</span>
+  </div>
 </footer>
 
+</body>
 </html>
