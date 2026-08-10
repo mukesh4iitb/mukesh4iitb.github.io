@@ -29,6 +29,10 @@ worked on the Google Sites version.
 ### Template for Academic CV_short are taken from here:
 https://github.com/topics/academic-cv-latex-template
 
+and 
+
+https://github.com/Mamunia/cv
+
 ### Template for Academic CV_long are taken from here:
 https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv
 
