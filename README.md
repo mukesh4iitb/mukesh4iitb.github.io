@@ -25,7 +25,14 @@ The "Code" nav link points straight to your existing GitHub Pages site
 (`https://mukesh4iitb.github.io/`) rather than a local page, matching how it
 worked on the Google Sites version.
 
-## Add your photo (optional)
+
+### Template for Academic CV_short are taken from here:
+https://github.com/topics/academic-cv-latex-template
+
+### Template for Academic CV_long are taken from here:
+https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv
+
+<!-- ## Add your photo (optional)
 
 The homepage currently shows a placeholder "MS" monogram avatar. To use a
 real photo:
@@ -79,4 +86,4 @@ python3 -m http.server 8000
 Every page is a self-contained HTML file with the same header/nav/footer
 markup repeated at the top and bottom — edit the text in the `<main>` section
 of whichever page you want to change. All shared visual styling lives in
-`assets/style.css`.
+`assets/style.css`. -->
