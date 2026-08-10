@@ -16,12 +16,6 @@
   --radius: 10px;
   --max-width: 780px;
   --header-max-width: 1040px;
-  --edu-pink-bg: #f8d7da;
-  --edu-pink-text: #7a2530;
-  --edu-blue-bg: #cfe2ff;
-  --edu-blue-text: #1f3864;
-  --edu-green-bg: #d7f0d1;
-  --edu-green-text: #245a24;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,12 +29,6 @@
     --accent-soft: #1c2836;
     --tag-bg: #1f242c;
     --tag-text: #c4cbd6;
-    --edu-pink-bg: #402028;
-    --edu-pink-text: #f3b6c0;
-    --edu-blue-bg: #1c2c47;
-    --edu-blue-text: #aecbff;
-    --edu-green-bg: #1e3320;
-    --edu-green-text: #a8e0a0;
   }
 }
 
@@ -261,91 +249,6 @@ ul.plain li, ol.plain li { margin-bottom: 8px; }
   border: 1px solid var(--border);
   border-radius: 8px;
   margin-bottom: 14px;
-}
-
-/* ---------- education flow chart (horizontal zig-zag, no scroll) ---------- */
-
-/* bleed wider than the narrow reading column so 9 steps have room to breathe */
-.edu-flow-bleed {
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding: 0 20px;
-  margin-top: 10px;
-}
-
-.edu-flow {
-  max-width: var(--header-max-width);
-  margin: 0 auto;
-  display: flex;
-  align-items: stretch;
-  height: 168px;
-  position: relative;
-}
-.edu-flow::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 2px;
-  background: var(--border);
-  transform: translateY(-50%);
-}
-
-.edu-slot {
-  flex: 1 1 0;
-  min-width: 0;
-  position: relative;
-}
-
-.edu-connector {
-  position: absolute;
-  left: 50%;
-  width: 2px;
-  background: var(--border);
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.edu-slot-top .edu-connector { top: 0; height: 50%; }
-.edu-slot-bottom .edu-connector { bottom: 0; height: 50%; }
-
-.edu-dot {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 8px;
-  height: 8px;
-  background: var(--accent);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.edu-step {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 92%;
-  box-sizing: border-box;
-  padding: 6px 6px;
-  border-radius: 8px;
-  text-align: center;
-  line-height: 1.25;
-  z-index: 3;
-}
-.edu-slot-top .edu-step { top: 0; }
-.edu-slot-bottom .edu-step { bottom: 0; }
-
-.edu-title { font-weight: 700; font-size: 0.68rem; }
-.edu-sub { font-size: 0.62rem; opacity: 0.85; margin-top: 2px; }
-
-.edu-pink  { background: var(--edu-pink-bg);  color: var(--edu-pink-text); }
-.edu-blue  { background: var(--edu-blue-bg);  color: var(--edu-blue-text); }
-.edu-green { background: var(--edu-green-bg); color: var(--edu-green-text); }
-
-@media (max-width: 640px) {
-  .edu-flow-bleed { overflow-x: auto; }
-  .edu-flow { min-width: 620px; }
 }
 
 /* ---------- tag groups (skills) ---------- */
